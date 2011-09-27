@@ -28,6 +28,7 @@ end
 
 gem 'jquery-rails'
 gem 'therubyracer'
+gem 'spork'
 
 # Use unicorn as the web server
 # gem 'unicorn'
