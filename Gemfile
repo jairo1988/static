@@ -24,6 +24,7 @@ group :test do
   gem 'autotest'
   gem 'autotest-rails-pure'
   gem 'autotest-growl'
+  gem 'factory_girl_rails'
 end
 
 gem 'jquery-rails'
@@ -31,6 +32,7 @@ gem 'therubyracer'
 gem 'spork'
 gem 'annotate'
 gem 'wirble'
+gem 'gravatar_image_tag'
 
 # Use unicorn as the web server
 # gem 'unicorn'
