@@ -17,6 +17,8 @@ group :assets do
 end
 group :development do
   gem 'rspec-rails'
+  gem 'annotate'
+  gem 'faker'
 end
 group :test do
   gem 'rspec-rails'
@@ -30,9 +32,10 @@ end
 gem 'jquery-rails'
 gem 'therubyracer'
 gem 'spork'
-gem 'annotate'
 gem 'wirble'
 gem 'gravatar_image_tag'
+gem 'will_paginate'
+
 
 # Use unicorn as the web server
 # gem 'unicorn'
