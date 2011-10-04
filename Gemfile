@@ -8,6 +8,7 @@ gem 'rails', '3.1.0'
 gem 'sqlite3'
 
 gem 'jquery-rails'
+
 gem 'therubyracer'
 gem 'gravatar_image_tag'
 gem 'will_paginate'
