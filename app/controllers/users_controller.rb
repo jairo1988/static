@@ -2,6 +2,7 @@ class UsersController < ApplicationController
 before_filter :authenticate, :only => [:index, :edit, :update, :destroy]
 before_filter :correct_user, :only => [:edit, :update]
 before_filter :admin_user,   :only => :destroy
+before_filter :authenticate, :except => [:show, :new, :create]
   def index
     @title="All users"
      @users = User.paginate(:page => params[:page], :per_page => 8)
@@ -47,6 +48,19 @@ end
       @title = "Edit user"
       render 'edit'
     end
+  end
+  def following
+    @title = "Following"
+    @user = User.find(params[:id])
+    @users = @user.following.paginate(:page => params[:page])
+    render 'show_follow'
+  end
+
+  def followers
+    @title = "Followers"
+    @user = User.find(params[:id])
+    @users = @user.followers.paginate(:page => params[:page])
+    render 'show_follow'
   end
   private
   def authenticate
