@@ -7,6 +7,12 @@ gem 'rails', '3.1.0'
 
 gem 'sqlite3'
 
+gem 'jquery-rails'
+gem 'therubyracer'
+gem 'gravatar_image_tag'
+gem 'will_paginate'
+
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -15,27 +21,17 @@ group :assets do
   gem 'coffee-rails', "~> 3.1.0"
   gem 'uglifier'
 end
+
 group :development do
-  gem 'rspec-rails'
+  gem 'wirble'
+  #gem 'rspec-rails'
   gem 'annotate'
   gem 'faker'
 end
-group :test do
-  gem 'rspec-rails'
-  gem 'webrat'
-  gem 'autotest'
-  gem 'autotest-rails-pure'
-  gem 'autotest-growl'
-  gem 'factory_girl_rails'
-end
 
-gem 'jquery-rails'
-gem 'therubyracer'
-gem 'spork'
-gem 'wirble'
-gem 'gravatar_image_tag'
-gem 'will_paginate'
-
+#group :test do
+  #gem 'rspec-rails'
+#end
 
 # Use unicorn as the web server
 # gem 'unicorn'

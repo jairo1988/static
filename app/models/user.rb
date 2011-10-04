@@ -20,6 +20,9 @@ validates :email, :presence   => true,
     # Compare encrypted_password with the encrypted version of
     # submitted_password.
   end
+ def feed
+   Micropost.where("user_id=?",id)
+ end
  def self.authenticate(email, submitted_password)
     user = find_by_email(email)
     return nil  if user.nil?
